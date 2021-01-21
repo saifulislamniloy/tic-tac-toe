@@ -95,13 +95,18 @@ main {
 .tiles-section {
   flex: 3;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+.tile-row {
+  display: flex;
 }
 
 .tile {
   padding: 1rem;
   font-size: 3vw;
-  height: vw;
+  height: 7vw;
   width: 7vw;
   background: linear-gradient(
     to right bottom,

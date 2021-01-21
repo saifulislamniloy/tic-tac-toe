@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../css/style.css" />
+    <script src="./../js/index.js"></script>
     <title>Tic Tac Toe</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <div class="dashboard">
           <div class="game-buttons-section">
             <button class="start button">Start</button>
-            <button class="reset button">Reset</button>
+            <button class="reset button" onclick="reset()">Reset</button>
           </div>
         </div>
         <div class="game-board">
@@ -22,19 +23,19 @@
           </div>
           <div class="tiles-section">
             <div class="tile-row">
-              <div class="tile">+</div>
-              <div class="tile">+</div>
-              <div class="tile">+</div>
+              <div class="tile" onclick="clickTile(0,0);" id="one"></div>
+              <div class="tile" onclick="clickTile(0,1);" id="two"></div>
+              <div class="tile" onclick="clickTile(0,2);" id="three"></div>
             </div>
             <div class="tile-row">
-              <div class="tile">O</div>
-              <div class="tile">O</div>
-              <div class="tile">O</div>
+              <div class="tile" onclick="clickTile(1,0);" id="four"></div>
+              <div class="tile" onclick="clickTile(1,1);" id="five"></div>
+              <div class="tile" onclick="clickTile(1,2);" id="six"></div>
             </div>
             <div class="tile-row">
-              <div class="tile">O</div>
-              <div class="tile">O</div>
-              <div class="tile">O</div>
+              <div class="tile" onclick="clickTile(2,0);" id="seven"></div>
+              <div class="tile" onclick="clickTile(2,1);" id="eight"></div>
+              <div class="tile" onclick="clickTile(2,2);" id="nine"></div>
             </div>
           </div>
         </div>
