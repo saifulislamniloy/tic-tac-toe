@@ -46,14 +46,16 @@ function updateBoard() {
 
 // eslint-disable-next-line no-unused-vars
 function clickTile(x, y) {
-  if (board[x][y] === '') {
-    if (player1 === true) board[x][y] = '+';
-    else if (player1 === false) board[x][y] = 'O';
-    player1 = !player1;
-    updateBoard();
-    declareWinner();
-    document.getElementById('status').innerText = gameStatus;
-  } else alert('Click on empty space!');
+  if (gameStatus === 'Null') {
+    if (board[x][y] === '') {
+      if (player1 === true) board[x][y] = '+';
+      else if (player1 === false) board[x][y] = 'O';
+      player1 = !player1;
+      updateBoard();
+      declareWinner();
+      document.getElementById('status').innerText = gameStatus;
+    } else alert('Click on empty space!');
+  } else alert('Game Has finished. Reset board.');
 }
 
 function declareWinner() {
