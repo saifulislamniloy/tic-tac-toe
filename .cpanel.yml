@@ -1,7 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/nilocpjt/repositories/tic-tac-toe 
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
+    - export DEPLOYPATH=/home/nilocpjt/repositories/tic-tac-toe  
+    - /bin/cp -r * $DEPLOYPATH

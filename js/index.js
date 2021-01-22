@@ -31,7 +31,7 @@ function reset() {
   ];
   indexName.map((value) => (document.getElementById(value).innerText = ''));
   player1 = true;
-  gameStatus = 'Null'
+  gameStatus = 'Null';
   document.getElementById('status').innerText = gameStatus;
 }
 
