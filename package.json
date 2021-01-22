@@ -4,7 +4,7 @@
   "description": "Tic-tac-toe with vanilla JS",
   "main": "./src/html/index.html",
   "scripts": {
-    "format": "prettier --write './src/**/*.{js,css,html}' --config ./.prettierrc"
+    "format": "prettier --write './**/*.{js,css,html}' --config ./.prettierrc --ignore-path ./.gitignore"
   },
   "repository": {
     "type": "git",
