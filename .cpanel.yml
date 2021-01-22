@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/nilocpjt/repositories/tic-tac-toe  
+    - export DEPLOYPATH=/home/nilocpjt/tic-tac-toe.niloysphere.com
     - /bin/cp -r * $DEPLOYPATH
