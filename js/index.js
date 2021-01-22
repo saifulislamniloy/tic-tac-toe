@@ -31,7 +31,8 @@ function reset() {
   ];
   indexName.map((value) => (document.getElementById(value).innerText = ''));
   player1 = true;
-  document.getElementById('status').innerText = 'Null';
+  gameStatus = 'Null'
+  document.getElementById('status').innerText = gameStatus;
 }
 
 function updateBoard() {
